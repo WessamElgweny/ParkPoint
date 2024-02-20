@@ -1,0 +1,16 @@
+@media screen and (max-width: 991px) {
+    .user{
+        width:fit-content;
+        padding:20px;
+    }
+    .booking{
+        width:fit-content; 
+    }
+    .log{
+        width:fit-content ;
+        padding: 20px; 
+    }
+   
+   
+}
+ 

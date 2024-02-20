@@ -1,0 +1,40 @@
+.item{
+    background-color: #23333D;
+    font-family: 'Titillium Web', sans-serif;
+}
+#home {
+    height: 75vh;
+}
+.group h1 {
+    color: #fff;
+}
+.group {
+    box-shadow: -5px 2px 54px -9px rgba(0, 0, 0, 1);
+}
+input{
+    background-color: transparent !important;
+    color: #fff !important;
+}
+input::placeholder{
+    color: rgb(182, 182, 182) !important;
+}
+.group a{
+    text-decoration: none;
+}
+span{
+    color: #448cea;
+}
+img{
+    width: 20px;
+}
+.user{
+    width: 50%;
+    padding: 50px;
+}
+.booking{
+    width: 50%; 
+}
+.log{
+    width: 75%;
+    padding: 50px; 
+}

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./CSS/style.css">
+    <link rel="stylesheet" href="./CSS/bootstrap.min.css">
+    <link rel="stylesheet" href="./CSS/all.min.css">
+    <link rel="stylesheet" href="./CSS/media.css">
+    <title>ParkPoint</title>
+    <link rel="icon" href="./Group 8739.png"/>
+</head>
+<body class="item">
+    <span class="d-none" id="username"></span>
+    <div class="container my-5 text-center">
+        <div class="group m-auto log">
+            <h1 class="text text-large">Sign Up <span>Park</span>Point </h1>
+            <input id="signupName" class="form-control my-3" placeholder="Enter your name" type="text">
+            <input id="signupEmail" class="form-control my-3" placeholder="Enter your email" type="email">
+            <div class="position-relative" id="password">
+                <input id="signupPassword" class="form-control my-3 " placeholder="Enter  password" type="password">
+                <span  role="button" class="position-absolute top-50 end-0 translate-middle-y me-2 text-info">
+                <i onclick="text()" class="fa-solid fa-eye" id="eye"></i>
+                <i onclick="password()" class="fa-solid fa-eye-slash d-none" id="eye-slash"></i>
+            </span>
+            </div>
+            <p id="exist"></p>
+            <button onclick="signUp()" class="btn btn-outline-info w-100 my-3">Sign Up</button>
+            <p class="text-white">You have an account? <a class='text-white' href='./index.html'>Login</a></p>
+        </div>
+    </div>
+    <script src="./JS/bootstrap.bundle.min.js"></script>
+    <script src="./JS/index.js"></script>
+</body>
+</html>
