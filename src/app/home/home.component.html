@@ -1,0 +1,13 @@
+<img  src="assets/WhatsApp Image 2024-04-28 at 9.56.06 PM.jpeg" class="w-100 my-3 img" alt="">
+<div class="border rounded shadow-sm p-3 mx-auto Booking">
+    <button  class="cursor-pointer bg-main w-100 border rounded text-white"  [routerLink]="['/pakya',id]">Booking</button>
+</div>
+<div class="row">
+    <div *ngFor="let Pakya of PakyasContainer" class="col-md-2 fs-2 py-4">
+        <div  class="pakya position-relative py-4">
+           <img [src]="Pakya.pictureUrl" class="w-100 cursor-pointer" alt="">
+           <p class="text-main fs-6  text-center pt-3">{{Pakya.name}}</p>
+        </div>
+    </div>
+</div>
+

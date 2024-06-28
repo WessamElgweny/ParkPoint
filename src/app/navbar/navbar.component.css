@@ -1,0 +1,8 @@
+.img{
+    padding-left: 50px;
+}
+@media screen and (max-width: 991px) {
+    .img{
+        padding-left: 10px;
+    }  
+}

@@ -1,0 +1,20 @@
+<div *ngIf=" Id > 0 else empty " class="container bg-light m-5 shadow rounded mx-auto  ">
+        <div class="text-center py-3">
+         <img [src]="singlePakya.pictureUrl" class="w-100 py-3" alt="">
+         <p>{{singlePakya.name}}</p>
+         <p class="text-center text-main ">Price: 25 EGP</p>
+         <button (click)="onlinePayment()" class="btn bg-main text-light w-50  ">
+         <div class="text-center"> confirm </div> 
+         </button>
+        </div>     
+</div>
+<ng-template #empty >
+        <div class="pt-4 mt-4">
+          <h2 class="text-center pt-5 mt-5">The Garage Is Full...</h2>
+        <div class="border rounded shadow-sm p-3 mt-5 mx-auto home">
+		<button class="cursor-pointer bg-main w-100 border rounded text-white"  routerLink="/home">Return to the home page</button>
+	</div>      
+        </div>
+	
+</ng-template>
+

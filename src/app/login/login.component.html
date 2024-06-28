@@ -1,0 +1,32 @@
+<div class="container my-5  ">
+   <div class="login shadow rounded p-5">
+      <div class="log">
+         <h1 class="text-center">Login Now</h1>
+            <form [formGroup]="loginForm" (ngSubmit)="login(loginForm)">
+               <label> Email:</label>
+                <input formControlName="email" type="email" class="form-control">
+                <p *ngIf="loginForm.get('email')?.getError('required')&&loginForm.get('email')?.touched" class="text-danger">please fill out this field</p>
+                <p *ngIf="loginForm.get('email')?.getError('email')" class="text-danger">please write correct email</p>
+                 <label> Password:</label>
+                 <div class="position-relative"> 
+                  <input formControlName="password" [type]="changeType?'password':'text'" class="form-control">
+                  <span class='position-absolute top-50 end-0  me-2 translate-middle-y cursor-pointer' (click)="viewPass()">
+                     <i [ngClass]="visible?'fa-solid fa-eye':'fa-solid fa-eye-slash'"></i>
+                  </span>
+                 </div>
+                 <p *ngIf="loginForm.get('password')?.getError('required')&&loginForm.get('password')?.touched" class="text-danger">please fill out this field</p>
+                 <p *ngIf="loginForm.get('password')?.getError('pattern')" class="text-danger">password must start with capital letter and @ and between 5 - 16 character</p>
+                   <div class="d-flex justify-content-between">
+                    <button *ngIf="!loading else loader" class="btn bg-main mt-3">Login</button>
+                   </div>
+                 <h5 class="text-center pt-2">{{apiResponse}}</h5>
+                 <ng-template #loader>
+                 <button class="btn bg-main">
+                    <i class="fa-solid fa-spinner fa-spin"></i>  
+                 </button>
+               </ng-template>
+            </form>
+        </div> 
+     </div>
+    </div>
+    
